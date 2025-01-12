@@ -1,0 +1,16 @@
+name: "exec bash in dir"
+
+on: ["push"]
+
+jobs:
+  exec-bash:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
+    steps:
+      - name: checkout
+        uses: action/checkout@v4
+      - name: run a script
+        run: /my_script.sh
+      
