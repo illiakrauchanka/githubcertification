@@ -1,0 +1,16 @@
+name: "Dep job example"
+
+on: ['push']
+
+jobs:
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1 job2
+        run: echo 'hello world!'
+  job1: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1 job1
+        run: echo 'hello world!'
