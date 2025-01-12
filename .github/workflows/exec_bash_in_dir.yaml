@@ -10,7 +10,7 @@ jobs:
         working-directory: ./scripts
     steps:
       - name: checkout
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: run a script
         run: /my_script.sh
       
