@@ -12,5 +12,5 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: run a script
-        run: /my_script.sh
+        run: ./my_script.sh
       
