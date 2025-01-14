@@ -9,5 +9,13 @@ jobs:
       - name: "My step"
         run: echo "Hello! $MY_ACTION $MY_ACTOR"
         env:
-          MY_ACTION: ${{ github.action}}
-          MY_ACTOR: ${{ github.actor}}
+          MY_ACTION: ${{ github.action }}
+          MY_ACTOR: ${{ github.actor }}
+
+      - name: "Print github.job context"
+        run: echo "$JOB_CONTEX"
+        env:
+          JOB_CONTEX: ${{  github.job }}
+
+
+         
