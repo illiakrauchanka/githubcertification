@@ -17,5 +17,8 @@ jobs:
         env:
           JOB_CONTEX: ${{  github.job }}
 
+      - name: "Print GITHUB_JOB"
+        run: echo "$GITHUB_JOB"
+
 
          
