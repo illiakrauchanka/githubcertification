@@ -5,7 +5,5 @@ on: ['push']
 
 jobs:
   container-test-job:
-      runs-on: ubuntu-latest
-      step:
-      - uses: docker://node:18
-        run: echo "Hello World"
+    runs-on: ubuntu-latest
+    container: node:18
